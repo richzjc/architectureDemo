@@ -1,0 +1,29 @@
+pluginManagement {
+    repositories {
+        google {
+            content {
+                includeGroupByRegex("com\\.android.*")
+                includeGroupByRegex("com\\.google.*")
+                includeGroupByRegex("androidx.*")
+            }
+        }
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+include ':app'
+include ':weather'
+include ':wallpaper'
+include ':BaseRes'
+project(':BaseRes').projectDir = new File(rootProject.projectDir, 'resources/BaseRes')
+include ':CarModeRes1'
+project(':CarModeRes1').projectDir = new File(rootProject.projectDir, 'resources/CarModeRes1')
+
