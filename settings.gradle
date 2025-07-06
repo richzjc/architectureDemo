@@ -26,4 +26,8 @@ include ':BaseRes'
 project(':BaseRes').projectDir = new File(rootProject.projectDir, 'resources/BaseRes')
 include ':CarModeRes1'
 project(':CarModeRes1').projectDir = new File(rootProject.projectDir, 'resources/CarModeRes1')
+include ':BaseCode'
+project(':BaseCode').projectDir = new File(rootProject.projectDir, 'code/BaseCode')
+include ':CarModeCode1'
+project(':CarModeCode1').projectDir = new File(rootProject.projectDir, 'code/CarModeCode1')
 
